@@ -7,7 +7,6 @@ function result(input) {
 
   const mid = Math.floor(input.length / 2);
   const sorted = input.sort((a, b) => { return a - b });
-  console.log(sorted);
 
   if (sorted.length % 2 !== 0) {
     return sorted[mid];
