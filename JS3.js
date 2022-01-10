@@ -56,7 +56,7 @@ const source = [
 function result(num) {
   // The question shows that the 'result' function receives input num but line 75 calls the function with input 'source' object.
   // Assumption:
-  // The 'result' function received input num id 1 and will return the array for students of specific school using id of school.
+  // The 'result' function received input num id 1 and will return the array for students of specific school using school's id.
   const formattedArray = [];
   source.forEach(e => {
     if (e.school.id == num) {
@@ -73,4 +73,4 @@ function result(num) {
 }
 
 // console.log(result(source)); 
-console.log(result(1)); // Assumption: 'result' function received num id not array 'source'.
+console.log(result(1)); // Assumption: 'result' function received num id not array 'source' to return the array of students with specific school's id.
